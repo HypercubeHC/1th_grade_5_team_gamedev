@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="113.111mm" height="76.7971mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 7943 5393"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#3BB8B8;stroke-width:14.0444;stroke-linecap:round;stroke-linejoin:round}
+    .str1 {stroke:#3BB8B8;stroke-width:14.0444;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:14.044376 14.044376}
+    .str2 {stroke:#3BB8B8;stroke-width:14.0444;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:28.088753 14.044376}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_1884714856656">
+   <g>
+    <path class="fil0 str0" d="M7 1616l0 -867 539 0 650 -700 279 0 51 42 306 0 5 -84 185 0 1 130 158 0 23 -97 404 0 0 92 1259 0 0 -74 1835 0 144 200c278,-66 334,366 41,423l112 92 181 -171c-66,-281 337,-332 372,-89 174,-85 410,20 455,233l260 0 0 868 -260 0 -44 63 0 301c132,74 234,205 250,432l0 593 514 0 0 -69 195 0 0 431 -139 0 -418 724 0 345 360 360 61 0 0 -53 150 1 0 503 -252 0 0 -68 -709 0 -51 51 0 158 -800 0 0 -155 -53 -54 -717 0 0 69 -279 0 0 -478 176 0 0 60 56 0 478 -478 -556 -963 -127 0 0 -426 172 0 0 70 567 0 0 -623c7,-181 84,-321 259,-435l0 -305 -108 -46 -318 183 0 459 -1770 0 -69 -119 -144 83 -261 0 0 60 -631 0 0 -84 -200 0 0 88 -348 0 0 -93 -107 0 0 140 -418 0 -18 -64 -201 0 -36 62 -275 0 -650 -720 -539 -1z"/>
+    <polyline class="fil0 str0" points="208,750 208,1615 208,1615 "/>
+    <polyline class="fil0 str0" points="546,750 546,1615 546,1615 "/>
+    <line class="fil0 str0" x1="208" y1="1348" x2="546" y2= "1348" />
+    <line class="fil0 str0" x1="208" y1="967" x2="546" y2= "967" />
+    <line class="fil0 str0" x1="1221" y1="49" x2="1221" y2= "2337" />
+    <polyline class="fil0 str0" points="1335,49 1335,2337 1334,2337 "/>
+    <line class="fil0 str0" x1="546" y1="967" x2="1221" y2= "654" />
+    <line class="fil0 str0" x1="546" y1="1348" x2="1221" y2= "1682" />
+    <polyline class="fil0 str0" points="1425,49 1425,575 3692,575 3692,132 "/>
+    <line class="fil0 str0" x1="2178" y1="575" x2="2178" y2= "1743" />
+    <polyline class="fil0 str0" points="1421,2337 1421,1743 3808,1743 "/>
+    <line class="fil0 str0" x1="3427" y1="1743" x2="3427" y2= "1097" />
+    <line class="fil0 str0" x1="3427" y1="998" x2="3427" y2= "575" />
+    <line class="fil0 str0" x1="2006" y1="575" x2="2006" y2= "1743" />
+    <polyline class="fil0 str0" points="1421,2131 3430,2131 3430,2228 3430,2228 "/>
+    <polygon class="fil0 str0" points="1788,1339 1788,976 1853,976 2006,1065 2006,1246 1846,1338 "/>
+    <line class="fil0 str0" x1="678" y1="906" x2="680" y2= "1415" />
+    <polygon class="fil0 str0" points="3383,1024 4924,135 5597,1302 4057,2191 "/>
+    <line class="fil0 str0" x1="3736" y1="820" x2="4410" y2= "1987" />
+    <line class="fil0 str0" x1="4074" y1="625" x2="4748" y2= "1792" />
+    <line class="fil0 str0" x1="4180" y1="564" x2="4853" y2= "1731" />
+    <line class="fil0 str0" x1="4536" y1="358" x2="5210" y2= "1525" />
+    <line class="fil0 str0" x1="3720" y1="1607" x2="5260" y2= "718" />
+    <line class="fil0 str0" x1="3427" y1="637" x2="4046" y2= "637" />
+    <polyline class="fil0 str0" points="4801,1762 5365,1762 5365,2264 "/>
+    <polyline class="fil0 str0" points="5365,1762 5365,1682 5605,1682 5605,2264 "/>
+    <line class="fil0 str0" x1="5365" y1="2013" x2="5605" y2= "2013" />
+    <polyline class="fil0 str0" points="5365,58 5365,619 5653,619 5653,58 "/>
+    <line class="fil0 str0" x1="5365" y1="338" x2="5653" y2= "338" />
+    <line class="fil0 str0" x1="5846" y1="258" x2="5846" y2= "660" />
+    <line class="fil0 str0" x1="5165" y1="553" x2="5365" y2= "553" />
+    <line class="fil0 str0" x1="5653" y1="558" x2="5892" y2= "685" />
+    <polyline class="fil0 str0" points="5999,773 5999,1622 5992,1622 "/>
+    <polyline class="fil0 str0" points="6100,1668 6963,1668 6963,1677 "/>
+    <polyline class="fil0 str0" points="6100,1820 6963,1820 6963,1827 "/>
+    <polyline class="fil0 str0" points="6100,1973 6963,1973 6963,1978 "/>
+    <polyline class="fil0 str0" points="5841,2408 7213,2408 7213,2410 "/>
+    <polygon class="fil0 str0" points="5840,3863 5494,3277 5849,3277 "/>
+    <polygon class="fil0 str0" points="7330,3689 7330,3262 7577,3262 "/>
+    <polygon class="fil0 str0" points="5449,4878 5830,4497 5830,4878 "/>
+    <polygon class="fil0 str0" points="7200,4580 7200,4878 7577,4878 7279,4581 "/>
+    <line class="fil0 str0" x1="5988" y1="4350" x2="5988" y2= "3252" />
+    <line class="fil0 str0" x1="6174" y1="4354" x2="6174" y2= "3252" />
+    <polyline class="fil0 str0" points="5988,3252 5988,3257 6443,3257 6443,4352 5780,4350 "/>
+    <polygon class="fil0 str0" points="6536,4354 6861,4354 6861,3257 6536,3257 "/>
+    <line class="fil0 str0" x1="6963" y1="3251" x2="6963" y2= "4579" />
+    <line class="fil0 str0" x1="7131" y1="3251" x2="7131" y2= "4577" />
+    <polyline class="fil0 str0" points="7266,3251 7266,4581 7243,4581 "/>
+    <polyline class="fil0 str0" points="7786,2934 7786,3365 7783,3365 "/>
+    <polyline class="fil0 str0" points="5830,4753 7200,4753 7200,4734 "/>
+    <line class="fil0 str0" x1="6124" y1="5231" x2="6924" y2= "5231" />
+    <line class="fil0 str0" x1="5251" y1="4828" x2="5251" y2= "5246" />
+    <line class="fil0 str0" x1="7786" y1="4794" x2="7786" y2= "5241" />
+    <polyline class="fil0 str0" points="5459,619 5459,1028 5444,1036 "/>
+    <line class="fil0 str0" x1="5459" y1="1382" x2="5459" y2= "1682" />
+    <polyline class="fil0 str0" points="5282,1484 5282,1668 4977,1668 4973,1662 "/>
+    <polyline class="fil0 str0" points="3668,1743 3668,2149 3844,2028 3928,2196 4027,2139 "/>
+    <polygon class="fil0 str0" points="3914,222 3761,222 3761,528 3914,528 "/>
+    <polygon class="fil0 str0" points="6239,1325 6239,990 6527,990 6527,1320 "/>
+    <polyline class="fil0 str0" points="6404,990 6404,1322 6404,1322 "/>
+    <ellipse class="fil0 str0" cx="6813" cy="811" rx="100" ry="129"/>
+    <ellipse class="fil0 str0" cx="6611" cy="916" rx="59" ry="86"/>
+    <line class="fil0 str0" x1="7007" y1="746" x2="7007" y2= "1614" />
+    <line class="fil0 str0" x1="6963" y1="4579" x2="7273" y2= "4581" />
+    <polygon class="fil0 str0" points="1486,196 1486,517 3630,517 3630,199 "/>
+    <line class="fil0 str0" x1="725" y1="884" x2="725" y2= "1442" />
+    <line class="fil0 str0" x1="1140" y1="691" x2="1140" y2= "1642" />
+    <polyline class="fil0 str0" points="726,1163 1140,1163 1140,1174 "/>
+    <polygon class="fil0 str0" points="3468,2166 3609,2166 3609,1795 1476,1795 1476,2081 3468,2081 "/>
+    <line class="fil0 str0" x1="2039" y1="575" x2="2039" y2= "1743" />
+    <line class="fil0 str0" x1="2146" y1="575" x2="2146" y2= "1743" />
+    <polyline class="fil0 str0" points="1846,1338 1846,976 1853,976 "/>
+    <polyline class="fil0 str0" points="1788,1158 2006,1158 2006,1159 "/>
+    <polyline class="fil0 str0" points="1788,1064 1846,1064 1999,1105 2006,1105 "/>
+    <polyline class="fil0 str0" points="1788,1252 1846,1252 2005,1209 2006,1209 "/>
+    <line class="fil0 str0" x1="1788" y1="976" x2="1335" y2= "976" />
+    <line class="fil0 str0" x1="1788" y1="1339" x2="1335" y2= "1339" />
+    <line class="fil0 str0" x1="1788" y1="1158" x2="1335" y2= "1158" />
+    <polygon class="fil0 str0" points="1383,1299 1383,1199 1739,1199 1739,1299 "/>
+    <polygon class="fil0 str0" points="1380,1118 1380,1016 1738,1016 1738,1118 "/>
+    <polyline class="fil0 str0" points="208,792 546,792 1216,121 1221,121 "/>
+    <polyline class="fil0 str0" points="208,1574 546,1574 1205,2233 1222,2251 "/>
+    <polyline class="fil0 str0" points="4154,579 4154,579 3974,579 3974,124 5302,124 5302,500 5138,500 "/>
+    <polygon class="fil0 str0" points="6055,807 6211,650 6278,589 6408,563 6589,547 6737,540 6877,616 6960,753 6960,1576 6939,1615 6122,1615 6056,1583 "/>
+    <polygon class="fil0 str0" points="6234,554 6260,460 6349,412 6449,427 6487,484 6492,511 6368,510 "/>
+    <line class="fil0 str0" x1="6963" y1="3251" x2="7266" y2= "3251" />
+    <polyline class="fil0 str0" points="5225,2961 5225,3387 5229,3387 "/>
+    <polygon class="fil0 str0" points="5901,2360 5922,2251 5980,2151 6052,2077 6115,2023 6937,2023 7041,2102 7109,2202 7153,2314 7165,2362 "/>
+    <polygon class="fil0 str0" points="2239,637 3363,637 3363,943 2920,943 2920,732 2668,732 2668,941 2239,941 "/>
+    <polygon class="fil0 str0" points="2238,1015 2238,1693 3371,1693 3371,1140 2670,1140 2670,1370 3183,1370 3183,1528 2509,1528 2509,1015 "/>
+    <polygon class="fil0 str0" points="5893,2461 5893,3209 7167,3209 7167,2459 "/>
+    <line class="fil0 str0" x1="7266" y1="4123" x2="7787" y2= "3219" />
+    <polyline class="fil0 str0" points="7786,3043 7265,3944 7266,3944 "/>
+    <line class="fil0 str0" x1="5225" y1="3203" x2="5879" y2= "4336" />
+    <line class="fil0 str0" x1="5225" y1="3029" x2="5979" y2= "4335" />
+    <line class="fil0 str0" x1="5877" y1="4333" x2="5877" y2= "4753" />
+    <line class="fil0 str0" x1="5975" y1="4327" x2="5975" y2= "4753" />
+    <line class="fil0 str0" x1="7684" y1="5211" x2="7936" y2= "5211" />
+    <polyline class="fil0 str0" points="5075,5209 5354,5209 5354,5212 "/>
+    <line class="fil0 str0" x1="7727" y1="2969" x2="7922" y2= "2969" />
+    <polyline class="fil0 str0" points="5102,2999 5274,2999 5274,2996 "/>
+    <polygon class="fil0 str0" points="6098,5152 6944,5152 6944,4832 6099,4832 "/>
+    <circle class="fil0 str0" cx="6530" cy="2834" r="295"/>
+    <circle class="fil0 str1" cx="6530" cy="2834" r="326"/>
+    <circle class="fil0 str2" cx="6530" cy="2834" r="263"/>
+    <circle class="fil0 str0" cx="6530" cy="2834" r="234"/>
+    <rect class="fil0 str0" x="6360" y="2673" width="345" height="317"/>
+    <polyline class="fil0 str0" points="6360,2673 6525,2990 6704,2673 "/>
+    <polygon class="fil0 str0" points="5941,2504 5941,3169 6359,3169 6231,3067 6171,2951 6148,2823 6171,2710 6210,2610 6331,2505 "/>
+    <polygon class="fil0 str0" points="7121,2504 7121,3169 6703,3169 6830,3067 6891,2951 6914,2823 6891,2710 6851,2610 6731,2505 "/>
+    <polyline class="fil0 str0" points="5509,1353 5509,1638 5841,1638 5948,1582 5948,804 5873,730 5739,660 5509,660 5509,1145 5507,1146 "/>
+   </g>
+   <line class="fil0 str0" x1="6124" y1="5287" x2="6924" y2= "5287" />
+  </g>
+ </g>
+</svg>
