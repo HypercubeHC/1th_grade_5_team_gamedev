@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="325.295mm" height="325.295mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 10344 10344"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str1 {stroke:#4DFFFF;stroke-width:23.8498}
+    .str0 {stroke:#53C9C9;stroke-width:23.8498}
+    .str2 {stroke:#53C9C9;stroke-width:23.8498}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <circle class="fil0 str0" cx="5172" cy="5172" r="5160"/>
+  <line class="fil0 str0" x1="5172" y1="12" x2="5172" y2= "10332" />
+  <line class="fil0 str1" x1="12" y1="5172" x2="10332" y2= "5172" />
+  <circle class="fil0 str2" cx="5172" cy="5172" r="246"/>
+  <circle class="fil0 str2" cx="5172" cy="5172" r="463"/>
+  <circle class="fil0 str2" cx="5172" cy="5172" r="895"/>
+  <circle class="fil0 str2" cx="5172" cy="5172" r="1416"/>
+  <circle class="fil0 str2" cx="5172" cy="5172" r="2055"/>
+  <circle class="fil0 str2" cx="5172" cy="5172" r="2890"/>
+  <circle class="fil0 str2" cx="5172" cy="5172" r="3844"/>
+  <circle class="fil0 str2" cx="5172" cy="5172" r="4957"/>
+ </g>
+</svg>
