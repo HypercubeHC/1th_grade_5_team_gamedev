@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7256547737875447454}
   - component: {fileID: 298787392}
   m_Layer: 5
-  m_Name: Image (5)
+  m_Name: engineer ET-1b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37,7 +37,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547737875447453
 CanvasRenderer:
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 7256547737901588505}
   - component: {fileID: 1107219526}
   m_Layer: 5
-  m_Name: Image (20)
+  m_Name: worker NP-1b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -134,7 +134,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547737901588504
 CanvasRenderer:
@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 7256547737953821319}
   - component: {fileID: 615301633}
   m_Layer: 5
-  m_Name: Image (13)
+  m_Name: technic ER-1a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -231,7 +231,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547737953821318
 CanvasRenderer:
@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 7256547738063499916}
   - component: {fileID: 1948955784}
   m_Layer: 5
-  m_Name: Image (24)
+  m_Name: worker NP-2c
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -328,7 +328,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547738063499907
 CanvasRenderer:
@@ -401,7 +401,7 @@ GameObject:
   - component: {fileID: 7256547738094420701}
   - component: {fileID: 494455899}
   m_Layer: 5
-  m_Name: Image
+  m_Name: capitan CS-00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -425,7 +425,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547738094420700
 CanvasRenderer:
@@ -498,7 +498,7 @@ GameObject:
   - component: {fileID: 7256547738120654925}
   - component: {fileID: 2100347225}
   m_Layer: 5
-  m_Name: Image (6)
+  m_Name: engineer ET-1c
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -522,7 +522,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547738120654924
 CanvasRenderer:
@@ -595,7 +595,7 @@ GameObject:
   - component: {fileID: 7256547738212881347}
   - component: {fileID: 489228708}
   m_Layer: 5
-  m_Name: Image (11)
+  m_Name: medic MS-1b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -619,7 +619,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547738212881346
 CanvasRenderer:
@@ -692,7 +692,7 @@ GameObject:
   - component: {fileID: 7256547738367177571}
   - component: {fileID: 1494183497}
   m_Layer: 5
-  m_Name: Image (10)
+  m_Name: medic MS-1a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -716,7 +716,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547738367177570
 CanvasRenderer:
@@ -892,7 +892,7 @@ GameObject:
   - component: {fileID: 7256547738465525275}
   - component: {fileID: 1615970908}
   m_Layer: 5
-  m_Name: Image (21)
+  m_Name: worker NP-1c
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -916,7 +916,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547738465525274
 CanvasRenderer:
@@ -989,7 +989,7 @@ GameObject:
   - component: {fileID: 7256547738540891288}
   - component: {fileID: 1862652301}
   m_Layer: 5
-  m_Name: Image (4)
+  m_Name: engineer ET-1a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1013,7 +1013,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547738540891295
 CanvasRenderer:
@@ -1086,7 +1086,7 @@ GameObject:
   - component: {fileID: 7256547738595064452}
   - component: {fileID: 715616456}
   m_Layer: 5
-  m_Name: Image (12)
+  m_Name: medic MS-1c
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1110,7 +1110,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547738595064699
 CanvasRenderer:
@@ -1183,7 +1183,7 @@ GameObject:
   - component: {fileID: 7256547738600745118}
   - component: {fileID: 1126570307}
   m_Layer: 5
-  m_Name: Image (23)
+  m_Name: worker NP-2b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1207,7 +1207,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547738600745117
 CanvasRenderer:
@@ -1280,7 +1280,7 @@ GameObject:
   - component: {fileID: 7256547738618295119}
   - component: {fileID: 460259252}
   m_Layer: 5
-  m_Name: Image (9)
+  m_Name: engineer ET-2c
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1304,7 +1304,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547738618295118
 CanvasRenderer:
@@ -1377,7 +1377,7 @@ GameObject:
   - component: {fileID: 7256547738636372301}
   - component: {fileID: 1330091903}
   m_Layer: 5
-  m_Name: Image (3)
+  m_Name: chemist EC-1c
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1401,7 +1401,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547738636372300
 CanvasRenderer:
@@ -1474,7 +1474,7 @@ GameObject:
   - component: {fileID: 7256547738677118037}
   - component: {fileID: 1546700741}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: chemist EC-1a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1498,7 +1498,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547738677118036
 CanvasRenderer:
@@ -1571,7 +1571,7 @@ GameObject:
   - component: {fileID: 7256547738687567522}
   - component: {fileID: 853725863}
   m_Layer: 5
-  m_Name: Image (19)
+  m_Name: worker NP-1a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1595,7 +1595,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547738687567521
 CanvasRenderer:
@@ -1668,7 +1668,7 @@ GameObject:
   - component: {fileID: 7256547738734021141}
   - component: {fileID: 75579536}
   m_Layer: 5
-  m_Name: Image (16)
+  m_Name: technic ER-2a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1692,7 +1692,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547738734021140
 CanvasRenderer:
@@ -1765,7 +1765,7 @@ GameObject:
   - component: {fileID: 7256547738804130205}
   - component: {fileID: 542305657}
   m_Layer: 5
-  m_Name: Image (15)
+  m_Name: technic ER-1c
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1789,7 +1789,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547738804130204
 CanvasRenderer:
@@ -1984,7 +1984,7 @@ GameObject:
   - component: {fileID: 7256547739052257690}
   - component: {fileID: 881249715}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: chemist EC-1b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2008,7 +2008,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547739052257689
 CanvasRenderer:
@@ -2081,7 +2081,7 @@ GameObject:
   - component: {fileID: 7256547739085416681}
   - component: {fileID: 173968717}
   m_Layer: 5
-  m_Name: Image (8)
+  m_Name: engineer ET-2b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2105,7 +2105,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547739085416680
 CanvasRenderer:
@@ -2178,7 +2178,7 @@ GameObject:
   - component: {fileID: 7256547739104649102}
   - component: {fileID: 1609556399}
   m_Layer: 5
-  m_Name: Image (7)
+  m_Name: engineer ET-2a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2202,7 +2202,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547739104649101
 CanvasRenderer:
@@ -2275,7 +2275,7 @@ GameObject:
   - component: {fileID: 7256547739190885660}
   - component: {fileID: 862641771}
   m_Layer: 5
-  m_Name: Image (17)
+  m_Name: technic ER-2b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2299,7 +2299,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547739190885651
 CanvasRenderer:
@@ -2372,7 +2372,7 @@ GameObject:
   - component: {fileID: 7256547739476911519}
   - component: {fileID: 1095804506}
   m_Layer: 5
-  m_Name: Image (14)
+  m_Name: technic ER-1b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2396,7 +2396,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547739476911518
 CanvasRenderer:
@@ -2469,7 +2469,7 @@ GameObject:
   - component: {fileID: 7256547739502266479}
   - component: {fileID: 588876404}
   m_Layer: 5
-  m_Name: Image (22)
+  m_Name: worker NP-2a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2493,7 +2493,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547739502266478
 CanvasRenderer:
@@ -2566,7 +2566,7 @@ GameObject:
   - component: {fileID: 7256547739631312173}
   - component: {fileID: 1573356681}
   m_Layer: 5
-  m_Name: Image (18)
+  m_Name: technic ER-2c
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2590,7 +2590,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 65}
+  m_SizeDelta: {x: 270, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7256547739631312172
 CanvasRenderer:
