@@ -31,7 +31,7 @@ public class ChangeResolution : MonoBehaviour
         }
         else if (Dropdown.value == 5)
         {
-            Screen.SetResolution(11920, 1080, true);
+            Screen.SetResolution(1920, 1080, true);
         }
     }
 }
