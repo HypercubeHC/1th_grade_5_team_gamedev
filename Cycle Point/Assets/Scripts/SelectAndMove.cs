@@ -8,9 +8,8 @@ public class SelectAndMove : MonoBehaviour
     private Ray ray;
     private RaycastHit2D hit;
     public bool select = false;
-    bool move = false;
     private Vector3 targetPos;
-    private float speed = 1250f;
+    private float speed = 400f;
     public GameObject go;
 
     Path path;
@@ -78,21 +77,18 @@ public class SelectAndMove : MonoBehaviour
 
         if (currentPoint >= path.vectorPath.Count)
         {
-            move = false;
             return;
         }
-        else
-        {
-            move = true;
-        }
 
-        Vector2 dir = ((Vector2)path.vectorPath[currentPoint] - rb.position).normalized;
-        Vector2 force = dir * speed * Time.deltaTime;
-        rb.AddForce(force);
+        //Vector2 dir = ((Vector2)path.vectorPath[currentPoint] - rb.position).normalized;
+        // Vector2 force = dir * speed * Time.fixedDeltaTime;
+        //rb.AddForce(force);
+        Vector2 newPos = Vector2.MoveTowards(rb.position, path.vectorPath[currentPoint], speed * Time.fixedDeltaTime);
+        rb.MovePosition(newPos);
 
         float dist = Vector2.Distance(rb.position, path.vectorPath[currentPoint]);
 
-        if (dist < 3f)
+        if (dist < 2f)
         {
             currentPoint++;
         }
