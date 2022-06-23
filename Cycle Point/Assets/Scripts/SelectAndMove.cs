@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Pathfinding;
 
 public class SelectAndMove : MonoBehaviour
@@ -10,7 +11,14 @@ public class SelectAndMove : MonoBehaviour
     public bool select = false;
     private Vector3 targetPos;
     private float speed = 400f;
+    public bool move = false;
     public GameObject go;
+    public Image im;
+    public bool broken = false;
+    public bool isMedic = false;
+    public bool isChemist = false;
+    public int chance;
+    GameObject[] person;
 
     Path path;
     int currentPoint = 0;
@@ -19,6 +27,7 @@ public class SelectAndMove : MonoBehaviour
 
     void Start()
     {
+        person = GameObject.Find("Controller").GetComponent<GeneralController>().people;
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
     }
@@ -43,26 +52,27 @@ public class SelectAndMove : MonoBehaviour
             if (hit.collider != null && hit.collider.gameObject == go)
             {
                 select = true;
+                im.rectTransform.sizeDelta = new Vector2(325, 100);
             }
             else if (hit.collider != null && hit.collider.gameObject.CompareTag("Person"))
             {
                 select = false;
+                im.rectTransform.sizeDelta = new Vector2(270, 88);
             }
-            else if (hit.collider != null && select && hit.collider.gameObject.CompareTag("Scheme"))
+            else if (hit.collider != null && select && !broken && hit.collider.gameObject.CompareTag("Scheme"))
             {
                 targetPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 targetPos.z = transform.position.z;
-                AstarPath.active.Scan();
+                //AstarPath.active.Scan();
                 seeker.StartPath(rb.position, targetPos, OnPathComplete);
-                //move = true;
+                move = true;
             }
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if (isMedic)
         {
-            select = false;
+            medic();
         }
-
         //if (move) 
         //{
         //    transform.position = vector3.movetowards(transform.position, targetpos, speed*time.deltatime);
@@ -77,6 +87,7 @@ public class SelectAndMove : MonoBehaviour
 
         if (currentPoint >= path.vectorPath.Count)
         {
+            move = false;
             return;
         }
 
@@ -91,6 +102,15 @@ public class SelectAndMove : MonoBehaviour
         if (dist < 2f)
         {
             currentPoint++;
+        }
+    }
+
+    void medic()
+    {
+        foreach (var item in person)
+        {
+            if (item.activeInHierarchy && Vector2.Distance(go.transform.position, item.transform.position) < 20f)
+                item.GetComponent<SelectAndMove>().broken = false;
         }
     }
 }

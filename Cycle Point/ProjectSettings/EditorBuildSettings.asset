@@ -11,4 +11,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 6cff129af4c7bc242b17c70aa64ae3b9
+  - enabled: 1
+    path: Assets/Scenes/Cutscene_main_ending.unity
+    guid: afd0f805fe96b46419a7e97bfc22f494
+  - enabled: 1
+    path: Assets/Scenes/Cutscene_non_working_station.unity
+    guid: f21e1e317f0fce044bd568bdc2b4834f
+  - enabled: 1
+    path: Assets/Scenes/Cutscene_Frozen_station.unity
+    guid: 5577d3a203a0861469ac7fa5b4b2fa8e
+  - enabled: 1
+    path: Assets/Scenes/Cutscene_hot_station.unity
+    guid: b0930c561ed012a4a8d13d61b613db2f
+  - enabled: 1
+    path: Assets/Scenes/Cutscene_too_low.unity
+    guid: c70e4bde01cf80c46ab90fff153ddc48
+  - enabled: 1
+    path: Assets/Scenes/Cutscene_too_high.unity
+    guid: 8150efe6eecce664d8dcc7d41550c827
+  - enabled: 1
+    path: Assets/Scenes/Cutscene_deadly_gas.unity
+    guid: 5be2060f2b1c5bb42a6910b75f428d1d
   m_configObjects: {}
