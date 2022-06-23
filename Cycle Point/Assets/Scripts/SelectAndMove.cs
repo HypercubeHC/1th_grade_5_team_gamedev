@@ -1,16 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class SelectAndMove : MonoBehaviour
 {
     private Ray ray;
     private RaycastHit2D hit;
     public bool select = false;
-    bool move = false;
     private Vector3 targetPos;
-    public float speed = 2f;
+    private float speed = 400f;
     public GameObject go;
+
+    Path path;
+    int currentPoint = 0;
+    Seeker seeker;
+    Rigidbody2D rb;
+
+    void Start()
+    {
+        seeker = GetComponent<Seeker>();
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    void OnPathComplete(Path p)
+    {
+        if (!p.error)
+        {
+            path = p;
+            currentPoint = 0;
+        }
+    }
 
     // Update is called once per frame
     void Update()
@@ -32,7 +52,9 @@ public class SelectAndMove : MonoBehaviour
             {
                 targetPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 targetPos.z = transform.position.z;
-                move = true;
+                AstarPath.active.Scan();
+                seeker.StartPath(rb.position, targetPos, OnPathComplete);
+                //move = true;
             }
         }
 
@@ -41,10 +63,34 @@ public class SelectAndMove : MonoBehaviour
             select = false;
         }
 
-        if (move) 
+        //if (move) 
+        //{
+        //    transform.position = vector3.movetowards(transform.position, targetpos, speed*time.deltatime);
+        //    if (transform.position == targetpos) move = false;
+        //}
+    }
+
+    void FixedUpdate()
+    {
+        if (path == null)
+            return;
+
+        if (currentPoint >= path.vectorPath.Count)
         {
-            transform.position = Vector3.MoveTowards(transform.position, targetPos, speed*Time.deltaTime);
-            if (transform.position == targetPos) move = false;
+            return;
+        }
+
+        //Vector2 dir = ((Vector2)path.vectorPath[currentPoint] - rb.position).normalized;
+        // Vector2 force = dir * speed * Time.fixedDeltaTime;
+        //rb.AddForce(force);
+        Vector2 newPos = Vector2.MoveTowards(rb.position, path.vectorPath[currentPoint], speed * Time.fixedDeltaTime);
+        rb.MovePosition(newPos);
+
+        float dist = Vector2.Distance(rb.position, path.vectorPath[currentPoint]);
+
+        if (dist < 2f)
+        {
+            currentPoint++;
         }
     }
 }
