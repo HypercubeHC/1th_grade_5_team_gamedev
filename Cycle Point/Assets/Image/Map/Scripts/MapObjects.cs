@@ -12,6 +12,7 @@ public class MapObjects : MonoBehaviour
     public int ind;
     int ind2;
     public bool check = false;
+    public GameObject contur;
 
     void Start()
     {
@@ -27,6 +28,7 @@ public class MapObjects : MonoBehaviour
         ArrayOfGameObjects[7] = GameObject.Find("Module R-01 (mini)");
 		ArrayOfGameObjects[8] = GameObject.Find("Module R-02 (mini)");
         ArrayOfGameObjects[9] = GameObject.Find("Module S-02 (mini)");
+        contur = GameObject.Find("Contur");
     }
 
     // Update is called once per frame
@@ -39,14 +41,19 @@ public class MapObjects : MonoBehaviour
                        Mathf.Pow((ArrayOfGameObjects[i].transform.position.y - ArrayOfGameObjects[0].transform.position.y), 2));
 		}
         ind2 = 0;
+        bool check_for_contur = false;
 		foreach(int destination in destinations)
 		{
 			if (destination < 22)
 			{
+				if(GameObject.Find("Canvas").GetComponent<OpenBigMap>().enabled_map == true)
+					contur.SetActive(true);
+				check_for_contur = true;
 				Debug.Log("The station is close");
 				if (Input.GetKeyDown(KeyCode.Q) && GameObject.Find("Camera").GetComponent<CamControl>().speedx is < 0.03f and > -0.03f
 				                                && GameObject.Find("Camera").GetComponent<CamControl>().speedy is < 0.03f and > -0.03f
-				                                && check == false && isCorrect())
+				                                && check == false && isCorrect() 
+				                                && GameObject.Find("Controller").GetComponent<GeneralController>().is_Paused == false)
 				{
 					check = true;
 					SceneManager.LoadScene("MiniGame", LoadSceneMode.Additive);
@@ -54,6 +61,8 @@ public class MapObjects : MonoBehaviour
                     break;
 				}
 			}
+			if(check_for_contur == false)
+				contur.SetActive(false);
             ++ind2;
         }
         /*destination =
