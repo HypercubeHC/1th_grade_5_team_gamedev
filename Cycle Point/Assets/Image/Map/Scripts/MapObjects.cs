@@ -33,7 +33,8 @@ public class MapObjects : MonoBehaviour
     void Update()
     {
         //float destination;
-		for (int i = 1; i <= ArrayOfGameObjects.Length - 1; i++)//óäàëÿåì ìîäóëè for (int i = 1; i <= 9; i++)
+
+		for (int i = 1; i <= ArrayOfGameObjects.Length - 1; i++)//ÑƒÐ´Ð°Ð»ÑÐµÐ¼ Ð¼Ð¾Ð´ÑƒÐ»Ð¸ for (int i = 1; i <= 9; i++)
 		{
     		destinations[i - 1] = Mathf.Sqrt(Mathf.Pow((ArrayOfGameObjects[i].transform.position.x - ArrayOfGameObjects[0].transform.position.x), 2) +
                        Mathf.Pow((ArrayOfGameObjects[i].transform.position.y - ArrayOfGameObjects[0].transform.position.y), 2));
