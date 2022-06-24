@@ -18,7 +18,8 @@ public class SelectAndMove : MonoBehaviour
     public bool isMedic = false;
     public bool isChemist = false;
     public int chance;
-    GameObject[] person;
+    Sprite defolt;
+    public Sprite red;
 
     Path path;
     int currentPoint = 0;
@@ -27,9 +28,10 @@ public class SelectAndMove : MonoBehaviour
 
     void Start()
     {
-        person = GameObject.Find("Controller").GetComponent<GeneralController>().people;
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
+        defolt = go.GetComponent<SpriteRenderer>().sprite;
+        if (go.name[0] == 'M') isMedic = true;
     }
 
     void OnPathComplete(Path p)
@@ -63,7 +65,7 @@ public class SelectAndMove : MonoBehaviour
             {
                 targetPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 targetPos.z = transform.position.z;
-                //AstarPath.active.Scan();
+
                 seeker.StartPath(rb.position, targetPos, OnPathComplete);
                 move = true;
             }
@@ -107,10 +109,14 @@ public class SelectAndMove : MonoBehaviour
 
     void medic()
     {
-        foreach (var item in person)
+        foreach (var item in GameObject.Find("Controller").GetComponent<GeneralController>().people)
         {
             if (item.activeInHierarchy && Vector2.Distance(go.transform.position, item.transform.position) < 20f)
-                item.GetComponent<SelectAndMove>().broken = false;
+                if (item.GetComponent<SelectAndMove>().broken)
+                {
+                    item.GetComponent<SelectAndMove>().broken = false;
+                    item.GetComponent<SpriteRenderer>().sprite = item.GetComponent<SelectAndMove>().defolt;
+                }
         }
     }
 }

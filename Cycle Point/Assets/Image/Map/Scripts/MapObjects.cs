@@ -42,10 +42,10 @@ public class MapObjects : MonoBehaviour
 			if (destination < 30)
 			{
 				Debug.Log("The station is close");
-				if (Input.GetKeyDown(KeyCode.Q))
+				if (Input.GetKeyDown(KeyCode.Q) && isCorrect())
 				{
-					SceneManager.LoadScene("MiniGame", LoadSceneMode.Additive);
                     ind = ind2;
+                    SceneManager.LoadScene("MiniGame", LoadSceneMode.Additive);
                     break;
 				}
 			}
@@ -55,5 +55,20 @@ public class MapObjects : MonoBehaviour
             Mathf.Sqrt(Mathf.Pow((ArrayOfGameObjects[1].transform.position.x - ArrayOfGameObjects[0].transform.position.x), 2) +
                        Mathf.Pow((ArrayOfGameObjects[1].transform.position.y - ArrayOfGameObjects[0].transform.position.y), 2));
         Debug.Log(destination);*/
+    }
+
+    bool isCorrect ()
+    {
+        if (ArrayOfGameObjects[ind2+1].name == "Module E-04 (mini)" && !GameObject.Find("Module L-01").activeSelf)
+            return false;
+        if (ArrayOfGameObjects[ind2 + 1].name == "Module E-03 (mini)" && !GameObject.Find("Module E-02").activeSelf)
+            return false;
+        if (ArrayOfGameObjects[ind2 + 1].name == "Module S-02 (mini)" && !GameObject.Find("Module E-02").activeSelf)
+            return false;
+        if (ArrayOfGameObjects[ind2 + 1].name == "Module R-02 (mini)" && !GameObject.Find("Module E-03").activeSelf)
+            return false;
+        if (ArrayOfGameObjects[ind2 + 1].name == "Module M-02 (mini)" && !GameObject.Find("Module E-01").activeSelf)
+            return false;
+        return true;
     }
 }
