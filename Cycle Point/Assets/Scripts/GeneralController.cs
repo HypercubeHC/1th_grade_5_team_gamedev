@@ -56,6 +56,9 @@ public class GeneralController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.X))
             SceneManager.LoadScene("Cutscene_deadly_gas");
 
+        if (Input.GetKeyDown(KeyCode.Z))
+            SceneManager.LoadScene("Cutscene_Open doors");
+
         Paramaters();
 
         checkProblems();
