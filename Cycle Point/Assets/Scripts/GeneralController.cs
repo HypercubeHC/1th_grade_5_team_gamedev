@@ -9,7 +9,7 @@ public class GeneralController : MonoBehaviour
     GameObject[] electric;
     GameObject[] fire;
     GameObject[] veryDangerous;
-    GameObject[] modules;
+    public GameObject[] modules;
     public GameObject[] people;
     Image heightbar;
     Image overheatbar;
