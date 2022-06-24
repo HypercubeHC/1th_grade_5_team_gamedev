@@ -9,52 +9,65 @@ public class CamControl : MonoBehaviour
 	public GameObject station;
 	public GameObject contur;
 
-	float speedx = 0f, speedy = 0f;
+	public float speedx = 0f, speedy = 0f;
 
 	void Start()
-    { 
-        station = GameObject.Find("Cycle Point module M-01 (mini)");
+	{
+		station = GameObject.Find("Cycle Point module M-01 (mini)");
 		contur = GameObject.Find("radar without bg");
-    }
-    void Update()
+	}
+	void Update()
+	{
+		if (contur.transform.position.x + speedx < -155.5 || contur.transform.position.x + speedx > -24.5)
+			speedx = 0;
+		if (contur.transform.position.y + speedy > 405)
 		{
-			if(contur.transform.position.x + speedx < -155.5 || contur.transform.position.x + speedx > -24.5)
-				speedx = 0;
-			if(contur.transform.position.y + speedy > 405)
+			cam.transform.position = new Vector3(cam.transform.position.x, -325.5f, cam.transform.position.z);
+			station.transform.position = new Vector3(station.transform.position.x, -325.5f, station.transform.position.z);
+			contur.transform.position = new Vector3(contur.transform.position.x, -325.5f, contur.transform.position.z);
+		}
+		if (contur.transform.position.y + speedy < -325.5)
+		{
+			cam.transform.position = new Vector3(cam.transform.position.x, 405, cam.transform.position.z);
+			station.transform.position = new Vector3(station.transform.position.x, 405, station.transform.position.z);
+			contur.transform.position = new Vector3(contur.transform.position.x, 405, contur.transform.position.z);
+		}
+		var dx = speedx;
+		var dy = speedy;
+		cam.transform.position = cam.transform.position + new Vector3(dx, dy, 0);
+		station.transform.position = station.transform.position + new Vector3(dx, dy, 0);
+		contur.transform.position = contur.transform.position + new Vector3(dx, dy, 0);
+		if (Input.GetKeyDown(KeyCode.W))
+		{
+			if (GameObject.Find("Controller").GetComponent<GeneralController>().fuelbar.fillAmount > 0.02 && speedy < 0.1f)
 			{
-				cam.transform.position = new Vector3(cam.transform.position.x, -325.5f, cam.transform.position.z);
-				station.transform.position = new Vector3(station.transform.position.x, -325.5f, station.transform.position.z);
-				contur.transform.position = new Vector3(contur.transform.position.x, -325.5f, contur.transform.position.z);
+				speedy += 0.01f;
+				GameObject.Find("Controller").GetComponent<GeneralController>().fuelbar.fillAmount -= 1 / 50f;//если нет топлива, то не ускоряется
 			}
-			if(contur.transform.position.y + speedy < -325.5)
+		}
+		if (Input.GetKeyDown(KeyCode.S))
+		{
+			if (GameObject.Find("Controller").GetComponent<GeneralController>().fuelbar.fillAmount > 0.02 && speedy > -0.1f)
 			{
-				cam.transform.position = new Vector3(cam.transform.position.x, 405, cam.transform.position.z);
-				station.transform.position = new Vector3(station.transform.position.x, 405, station.transform.position.z);
-				contur.transform.position = new Vector3(contur.transform.position.x, 405, contur.transform.position.z);
+				speedy -= 0.01f;
+				GameObject.Find("Controller").GetComponent<GeneralController>().fuelbar.fillAmount -= 1 / 50f;
 			}
-			var dx = speedx;
-			var dy = speedy;
-			cam.transform.position = cam.transform.position + new Vector3(dx, dy, 0);
-			station.transform.position = station.transform.position + new Vector3(dx, dy, 0);
-			contur.transform.position = contur.transform.position + new Vector3(dx, dy, 0);
-			if( Input.GetKeyDown( KeyCode.W ) )
-            	speedy += 0.01f;
-        	if( Input.GetKeyDown( KeyCode.S ) )
-            	speedy -= 0.01f;
-			//Debug.Log(contur.transform.position.x);
-       		if( Input.GetKeyDown( KeyCode.A ) )
+		}
+		if (Input.GetKeyDown(KeyCode.A))
+		{
+			if (GameObject.Find("Controller").GetComponent<GeneralController>().fuelbar.fillAmount > 0.02 && speedx > -0.1f)
 			{
-				//if(contur.transform.position.x > -155.5)
-            		speedx -= 0.01f;
-				//else
-					//speedx = 0;
+				speedx -= 0.01f;
+				GameObject.Find("Controller").GetComponent<GeneralController>().fuelbar.fillAmount -= 1 / 50f;
 			}
-        	if( Input.GetKeyDown( KeyCode.D ) )
-            {
-				//if(contur.transform.position.x < -24.5)
-            		speedx += 0.01f;
-				//else
-					//speedx = 0;
+		}
+		if (Input.GetKeyDown(KeyCode.D))
+		{
+			if (GameObject.Find("Controller").GetComponent<GeneralController>().fuelbar.fillAmount > 0.02 && speedx < 0.1f)
+			{
+				speedx += 0.01f;
+				GameObject.Find("Controller").GetComponent<GeneralController>().fuelbar.fillAmount -= 1 / 50f;
 			}
+		}
 	}
 }
