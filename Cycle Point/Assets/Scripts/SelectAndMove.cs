@@ -54,11 +54,13 @@ public class SelectAndMove : MonoBehaviour
             if (hit.collider != null && hit.collider.gameObject == go)
             {
                 select = true;
+                go.GetComponent<SpriteRenderer>().color = new Color(0f, 0.9f , 0.1f, 1f);
                 im.rectTransform.sizeDelta = new Vector2(325, 100);
             }
             else if (hit.collider != null && hit.collider.gameObject.CompareTag("Person"))
             {
                 select = false;
+                go.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
                 im.rectTransform.sizeDelta = new Vector2(270, 88);
             }
             else if (hit.collider != null && select && !broken && hit.collider.gameObject.CompareTag("Scheme"))

@@ -57,6 +57,14 @@ public class Timer : MonoBehaviour
                         GameObject.Find("mapreference").GetComponent<MapObjects>().destinations.ToList().RemoveAt(index - 1);
                         GameObject.Find("mapreference").GetComponent<MapObjects>().ArrayOfGameObjects.ToArray();
                         GameObject.Find("mapreference").GetComponent<MapObjects>().destinations.ToArray();*/
+
+                        int countModul = 0;
+                        foreach (var mod in GameObject.Find("Controller").GetComponent<GeneralController>().modules)
+                        {
+                            if (mod.activeSelf) ++countModul;
+                        }
+                        if (countModul >= 9)
+                            GameObject.Find("Canvas").GetComponent<OpenBigMap>().MainEnd.SetActive(true);
                         break;
                     }
                 }
@@ -98,11 +106,17 @@ public class Timer : MonoBehaviour
         if (newObject.name == "Module R-01")
             GameObject.Find("Between R01 M01").SetActive(false);
         else if (newObject.name == "Module E-04")
+        {
+            GameObject.Find("Controller").GetComponent<GeneralController>().gasProb = true;
             GameObject.Find("Between E04 L01").SetActive(false);
+        }
         else if (newObject.name == "Module L-01")
             GameObject.Find("Between L01 M01").SetActive(false);
         else if (newObject.name == "Module E-02")
+        {
+            GameObject.Find("Controller").GetComponent<GeneralController>().gasProb = true;
             GameObject.Find("Between M01 E02").SetActive(false);
+        }
         else if (newObject.name == "Module E-03")
             GameObject.Find("Between E02 E03").SetActive(false);
         else if (newObject.name == "Module R-02")
