@@ -23,7 +23,6 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        //if radius(!!!!!!!!!!!!!)//TODO:: zalupa
         //Debug.Log("OnBeginDrag");
         canvasGroup.blocksRaycasts = false;
     }

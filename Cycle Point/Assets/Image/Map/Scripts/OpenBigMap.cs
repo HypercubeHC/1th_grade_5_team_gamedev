@@ -21,11 +21,13 @@ public class OpenBigMap : MonoBehaviour
     {
         //map = GameObject.Find("Image");
 		//map2 = GameObject.Find("MapTexture");
-		ArrayOfGameObjectsICareAbout = new GameObject[2];
+		ArrayOfGameObjectsICareAbout = new GameObject[3];
      	ArrayOfGameObjectsICareAbout[0] = GameObject.Find("Image");
 		ArrayOfGameObjectsICareAbout[1] = GameObject.Find("MapTexture");
+		ArrayOfGameObjectsICareAbout[2] = GameObject.Find("hot_keys_for_radar");
 		ArrayOfGameObjectsICareAbout[0].SetActive(false);
 		ArrayOfGameObjectsICareAbout[1].SetActive(false);
+		ArrayOfGameObjectsICareAbout[2].SetActive(false);
 	}
 
     // Update is called once per frame
@@ -45,6 +47,7 @@ public class OpenBigMap : MonoBehaviour
 				//map.enabled = false;
 				ArrayOfGameObjectsICareAbout[0].SetActive(false);
 				ArrayOfGameObjectsICareAbout[1].SetActive(false);
+				ArrayOfGameObjectsICareAbout[2].SetActive(false);
 			}
 			else
 			{
@@ -52,6 +55,7 @@ public class OpenBigMap : MonoBehaviour
 				ArrayOfGameObjectsICareAbout[0].SetActive(true);
 				//map.enabled = true;
 				ArrayOfGameObjectsICareAbout[1].SetActive(true);
+				ArrayOfGameObjectsICareAbout[2].SetActive(true);
 			}
 		}
         /*if (Input.GetKeyDown(KeyCode.E))

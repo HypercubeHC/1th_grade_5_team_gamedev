@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +11,7 @@ public class MapObjects : MonoBehaviour
 	public double[] destinations;
     public int ind;
     int ind2;
+    public bool check = false;
 
     void Start()
     {
@@ -31,7 +33,7 @@ public class MapObjects : MonoBehaviour
     void Update()
     {
         //float destination;
-		for (int i = 1; i <= 9; i++)
+		for (int i = 1; i <= ArrayOfGameObjects.Length - 1; i++)//удаляем модули for (int i = 1; i <= 9; i++)
 		{
     		destinations[i - 1] = Mathf.Sqrt(Mathf.Pow((ArrayOfGameObjects[i].transform.position.x - ArrayOfGameObjects[0].transform.position.x), 2) +
                        Mathf.Pow((ArrayOfGameObjects[i].transform.position.y - ArrayOfGameObjects[0].transform.position.y), 2));
@@ -39,13 +41,16 @@ public class MapObjects : MonoBehaviour
         ind2 = 0;
 		foreach(int destination in destinations)
 		{
-			if (destination < 30)
+			if (destination < 22)
 			{
 				Debug.Log("The station is close");
-				if (Input.GetKeyDown(KeyCode.Q) && isCorrect())
+				if (Input.GetKeyDown(KeyCode.Q) && GameObject.Find("Camera").GetComponent<CamControl>().speedx is < 0.03f and > -0.03f
+				                                && GameObject.Find("Camera").GetComponent<CamControl>().speedy is < 0.03f and > -0.03f
+				                                && check == false)
 				{
+					check = true;
+					SceneManager.LoadScene("MiniGame", LoadSceneMode.Additive);
                     ind = ind2;
-                    SceneManager.LoadScene("MiniGame", LoadSceneMode.Additive);
                     break;
 				}
 			}

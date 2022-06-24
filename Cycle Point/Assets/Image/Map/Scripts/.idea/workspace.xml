@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fb893af7-c26b-431c-b925-8489b15f5f71" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../.idea/.idea.Cycle Point/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../.idea/.idea.Cycle Point/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../.idea/.idea.Cycle Point/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../.idea/.idea.Cycle Point/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hot_keys_for_radar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hot_keys_for_radar.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CamControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CamControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Circleslot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Circleslot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DragDrop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DragDrop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MapObjects.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenBigMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OpenBigMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Timer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Scripts/GeneralController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Scripts/GeneralController.cs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectId" id="2B1ykoBEVcihpp6Dw2D8jmDAQGH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fb893af7-c26b-431c-b925-8489b15f5f71" name="Default Changelist" comment="" />
+      <created>1656088034919</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656088034919</updated>
+    </task>
+    <servers />
+  </component>
+</project>
