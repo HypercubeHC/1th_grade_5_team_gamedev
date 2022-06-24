@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Person
   - Scheme
+  - Electric
+  - Fire
+  - VeryDangerous
+  - Module
   layers:
   - Default
   - TransparentFX
