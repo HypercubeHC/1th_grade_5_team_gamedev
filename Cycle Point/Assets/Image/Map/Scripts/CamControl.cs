@@ -42,7 +42,6 @@ public class CamControl : MonoBehaviour
 	            if(GameObject.Find("Controller").GetComponent<GeneralController>().fuelbar.fillAmount > 0.02 && speedy < 0.1f)
 	            {
 		            speedy += 0.01f;
-
 		            GameObject.Find("Controller").GetComponent<GeneralController>().fuelbar.fillAmount -= 1 / 50f;//если нет топлива, то не ускоряется
 	            }
             }
