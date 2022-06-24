@@ -216,6 +216,7 @@ MonoBehaviour:
   isMedic: 1
   isChemist: 0
   chance: 50
+  red: {fileID: 21300000, guid: 8094961373881d94281419b0d54fffb9, type: 3}
 --- !u!212 &8279945
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -775,6 +776,7 @@ MonoBehaviour:
   isMedic: 1
   isChemist: 0
   chance: 45
+  red: {fileID: 21300000, guid: 8094961373881d94281419b0d54fffb9, type: 3}
 --- !u!212 &65294605
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1141,7 +1143,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 302.09995, y: 7.6323986}
-  m_SizeDelta: {x: 49.8211, y: 54.077}
+  m_SizeDelta: {x: 55, y: 54.077}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &97853557
 MonoBehaviour:
@@ -1163,7 +1165,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 21113541b638c784ea1f246d233e8b3f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c9318ad25d5c0694189aadfe757f0712, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1442,6 +1444,7 @@ MonoBehaviour:
   isMedic: 0
   isChemist: 0
   chance: 30
+  red: {fileID: 21300000, guid: 4d3b35c573cb7c247bf58b7b50aae42a, type: 3}
 --- !u!212 &133238341
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2165,6 +2168,7 @@ MonoBehaviour:
   isMedic: 0
   isChemist: 0
   chance: 50
+  red: {fileID: 21300000, guid: a84569acf5a86da4c83fde4bd6ab4f39, type: 3}
 --- !u!212 &281728126
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2638,6 +2642,7 @@ MonoBehaviour:
   isMedic: 0
   isChemist: 0
   chance: 70
+  red: {fileID: 21300000, guid: 0e20c73b29e902846819a17cef191bfd, type: 3}
 --- !u!212 &307897592
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3051,6 +3056,7 @@ MonoBehaviour:
   isMedic: 0
   isChemist: 1
   chance: 45
+  red: {fileID: 21300000, guid: fef2b7f8c882de54fb479d94468b68c9, type: 3}
 --- !u!212 &361862331
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3224,6 +3230,7 @@ MonoBehaviour:
   isMedic: 0
   isChemist: 0
   chance: 20
+  red: {fileID: 21300000, guid: 4d3b35c573cb7c247bf58b7b50aae42a, type: 3}
 --- !u!212 &400387959
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3412,6 +3419,7 @@ MonoBehaviour:
   isMedic: 0
   isChemist: 0
   chance: 10
+  red: {fileID: 21300000, guid: 4d3b35c573cb7c247bf58b7b50aae42a, type: 3}
 --- !u!58 &477248080
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3704,6 +3712,7 @@ MonoBehaviour:
   isMedic: 0
   isChemist: 0
   chance: 35
+  red: {fileID: 21300000, guid: 4d3b35c573cb7c247bf58b7b50aae42a, type: 3}
 --- !u!212 &509349150
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4906,6 +4915,7 @@ MonoBehaviour:
   isMedic: 0
   isChemist: 0
   chance: 85
+  red: {fileID: 21300000, guid: 4e553d2473b14314da1b96631b146891, type: 3}
 --- !u!212 &751916447
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5079,6 +5089,7 @@ MonoBehaviour:
   isMedic: 0
   isChemist: 0
   chance: 60
+  red: {fileID: 21300000, guid: 0e20c73b29e902846819a17cef191bfd, type: 3}
 --- !u!212 &753270689
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5434,6 +5445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modules: []
   people: []
+  fuelbar: {fileID: 0}
 --- !u!4 &808005560
 Transform:
   m_ObjectHideFlags: 0
@@ -5866,6 +5878,7 @@ MonoBehaviour:
   isMedic: 0
   isChemist: 1
   chance: 40
+  red: {fileID: 21300000, guid: fef2b7f8c882de54fb479d94468b68c9, type: 3}
 --- !u!212 &860515872
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6158,6 +6171,7 @@ MonoBehaviour:
   isMedic: 1
   isChemist: 0
   chance: 40
+  red: {fileID: 21300000, guid: 8094961373881d94281419b0d54fffb9, type: 3}
 --- !u!212 &892312142
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6420,6 +6434,7 @@ MonoBehaviour:
   isMedic: 0
   isChemist: 0
   chance: 100
+  red: {fileID: 21300000, guid: 4e553d2473b14314da1b96631b146891, type: 3}
 --- !u!212 &915972102
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7127,6 +7142,7 @@ MonoBehaviour:
   isMedic: 0
   isChemist: 0
   chance: 50
+  red: {fileID: 21300000, guid: 0e20c73b29e902846819a17cef191bfd, type: 3}
 --- !u!212 &1052221546
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7384,6 +7400,7 @@ MonoBehaviour:
   isMedic: 0
   isChemist: 1
   chance: 35
+  red: {fileID: 21300000, guid: fef2b7f8c882de54fb479d94468b68c9, type: 3}
 --- !u!212 &1073344504
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8337,6 +8354,7 @@ MonoBehaviour:
   isMedic: 0
   isChemist: 0
   chance: 95
+  red: {fileID: 21300000, guid: 4e553d2473b14314da1b96631b146891, type: 3}
 --- !u!212 &1151865638
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9751,6 +9769,7 @@ MonoBehaviour:
   isMedic: 0
   isChemist: 0
   chance: 75
+  red: {fileID: 21300000, guid: 4e553d2473b14314da1b96631b146891, type: 3}
 --- !u!212 &1527730537
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10376,6 +10395,7 @@ MonoBehaviour:
   isMedic: 0
   isChemist: 0
   chance: 80
+  red: {fileID: 21300000, guid: 4e553d2473b14314da1b96631b146891, type: 3}
 --- !u!212 &1606049966
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10915,6 +10935,7 @@ MonoBehaviour:
   isMedic: 0
   isChemist: 0
   chance: 90
+  red: {fileID: 21300000, guid: 4e553d2473b14314da1b96631b146891, type: 3}
 --- !u!212 &1701148338
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11357,6 +11378,7 @@ MonoBehaviour:
   isMedic: 0
   isChemist: 0
   chance: 25
+  red: {fileID: 21300000, guid: 4d3b35c573cb7c247bf58b7b50aae42a, type: 3}
 --- !u!212 &1730904600
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12233,6 +12255,7 @@ MonoBehaviour:
   isMedic: 0
   isChemist: 0
   chance: 15
+  red: {fileID: 21300000, guid: 4d3b35c573cb7c247bf58b7b50aae42a, type: 3}
 --- !u!212 &1771539546
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12486,6 +12509,7 @@ MonoBehaviour:
   isMedic: 0
   isChemist: 0
   chance: 65
+  red: {fileID: 21300000, guid: 0e20c73b29e902846819a17cef191bfd, type: 3}
 --- !u!212 &1791661989
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13688,6 +13712,7 @@ MonoBehaviour:
   isMedic: 0
   isChemist: 0
   chance: 75
+  red: {fileID: 21300000, guid: 0e20c73b29e902846819a17cef191bfd, type: 3}
 --- !u!212 &1895053623
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14625,6 +14650,7 @@ MonoBehaviour:
   isMedic: 0
   isChemist: 0
   chance: 55
+  red: {fileID: 21300000, guid: 0e20c73b29e902846819a17cef191bfd, type: 3}
 --- !u!212 &2106162848
 SpriteRenderer:
   m_ObjectHideFlags: 0

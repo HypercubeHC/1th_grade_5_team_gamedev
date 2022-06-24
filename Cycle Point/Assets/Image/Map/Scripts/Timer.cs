@@ -43,6 +43,8 @@ public class Timer : MonoBehaviour
                     if (nameEqual(item, GameObject.Find("mapreference").GetComponent<MapObjects>().ArrayOfGameObjects[index]))
                     {
                         item.SetActive(true);
+                        breakOverlap(item);
+                        Pathfinding.AstarData.active.Scan();
                     }
                 }
                 SceneManager.UnloadSceneAsync ("MiniGame");
@@ -73,5 +75,27 @@ public class Timer : MonoBehaviour
             }
         }
         return true;
+    }
+
+    void breakOverlap(GameObject newObject)
+    {
+        if (newObject.name == "Module R-01")
+            GameObject.Find("Between R01 M01").SetActive(false);
+        else if (newObject.name == "Module E-04")
+            GameObject.Find("Between E04 L01").SetActive(false);
+        else if (newObject.name == "Module L-01")
+            GameObject.Find("Between L01 M01").SetActive(false);
+        else if (newObject.name == "Module E-02")
+            GameObject.Find("Between M01 E02").SetActive(false);
+        else if (newObject.name == "Module E-03")
+            GameObject.Find("Between E02 E03").SetActive(false);
+        else if (newObject.name == "Module R-02")
+            GameObject.Find("Between E03 R02").SetActive(false);
+        else if (newObject.name == "Module E-01")
+            GameObject.Find("Between M01 E01").SetActive(false);
+        else if (newObject.name == "Module S-02")
+            GameObject.Find("Between E02 S02").SetActive(false);
+        if (newObject.name == "Module M-02")
+            GameObject.Find("Between E01 M02").SetActive(false);
     }
 }
