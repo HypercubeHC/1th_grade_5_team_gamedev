@@ -46,7 +46,7 @@ public class MapObjects : MonoBehaviour
 				Debug.Log("The station is close");
 				if (Input.GetKeyDown(KeyCode.Q) && GameObject.Find("Camera").GetComponent<CamControl>().speedx is < 0.03f and > -0.03f
 				                                && GameObject.Find("Camera").GetComponent<CamControl>().speedy is < 0.03f and > -0.03f
-				                                && check == false)
+				                                && check == false && isCorrect())
 				{
 					check = true;
 					SceneManager.LoadScene("MiniGame", LoadSceneMode.Additive);
