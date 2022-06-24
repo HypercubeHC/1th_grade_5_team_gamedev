@@ -16,7 +16,7 @@ public class GeneralController : MonoBehaviour
     Image coolbar;
     Image healthbar;
     Image oxygenbar;
-    Image fuelbar;
+    public Image fuelbar;
 
     bool timeToProblem = false;
     float timer = 1;
@@ -53,6 +53,9 @@ public class GeneralController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.X))
+            SceneManager.LoadScene("Cutscene_deadly_gas");
+
         Paramaters();
 
         checkProblems();
@@ -64,8 +67,8 @@ public class GeneralController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.R))
         {
-            heightbar.fillAmount += 1 / 40f * Time.deltaTime;
-            fuelbar.fillAmount -= 1 / 100f * Time.deltaTime;
+            heightbar.fillAmount += 1 / 30f * Time.deltaTime;
+            fuelbar.fillAmount -= 1 / 90f * Time.deltaTime;
         }
         else if (heightbar.fillAmount <= 0)
             SceneManager.LoadScene("Cutscene_too_low");
@@ -117,7 +120,7 @@ public class GeneralController : MonoBehaviour
         else if (oxygenbar.fillAmount <= 0)
             SceneManager.LoadScene("Cutscene_non_working_station");
         else if (fireCount > 0 || dangerCount > 0)
-            oxygenbar.fillAmount -= (fireCount + dangerCount*0.5f) / 200f * Time.deltaTime;
+            oxygenbar.fillAmount -= (fireCount*1.25f + dangerCount*0.75f) / 200f * Time.deltaTime;
         else
             oxygenbar.fillAmount += 1 / 240f * Time.deltaTime;
 
@@ -155,7 +158,7 @@ public class GeneralController : MonoBehaviour
                 }
             }
 
-            timeProblem = Random.Range(20, 40);
+            timeProblem = Random.Range(10, 25);
             timeToProblem = false;
         }
         else
@@ -187,7 +190,11 @@ public class GeneralController : MonoBehaviour
                                 temp = Random.Range(0, 101);
                                 if (people[i].GetComponent<SelectAndMove>().chance >= temp)
                                     item.transform.GetChild(2).gameObject.SetActive(false);
-                                else people[i].GetComponent<SelectAndMove>().broken = true;
+                                else 
+                                {
+                                    people[i].GetComponent<SpriteRenderer>().sprite = people[i].GetComponent<SelectAndMove>().red;
+                                    people[i].GetComponent<SelectAndMove>().broken = true; 
+                                }
                             }
                         }
                     }
@@ -204,7 +211,10 @@ public class GeneralController : MonoBehaviour
                                 if (people[i].GetComponent<SelectAndMove>().chance >= temp)
                                     item.transform.GetChild(0).gameObject.SetActive(false);
                                 else if (!people[i].GetComponent<SelectAndMove>().isMedic)
+                                {
+                                    people[i].GetComponent<SpriteRenderer>().sprite = people[i].GetComponent<SelectAndMove>().red;
                                     people[i].GetComponent<SelectAndMove>().broken = true;
+                                }
                             }
                         }
                     }
@@ -221,7 +231,10 @@ public class GeneralController : MonoBehaviour
                                 if (people[i].GetComponent<SelectAndMove>().chance >= temp)
                                     item.transform.GetChild(1).gameObject.SetActive(false);
                                 else if (!people[i].GetComponent<SelectAndMove>().isMedic)
+                                {
+                                    people[i].GetComponent<SpriteRenderer>().sprite = people[i].GetComponent<SelectAndMove>().red;
                                     people[i].GetComponent<SelectAndMove>().broken = true;
+                                }
                             }
                         }
                     }
@@ -232,10 +245,10 @@ public class GeneralController : MonoBehaviour
 
     bool inModule(GameObject modul, GameObject person)
     {
-        if (person.transform.position.x < (modul.transform.localScale.x / 2 + modul.transform.position.x))
-            if (person.transform.position.x > (modul.transform.position.x - modul.transform.localScale.x / 2))
-                if (person.transform.position.y < (modul.transform.localScale.y / 2 + modul.transform.position.y))
-                    if (person.transform.position.y > (modul.transform.position.y - modul.transform.localScale.y / 2))
+        if (person.transform.position.x < (modul.GetComponent<SpriteRenderer>().bounds.size.x / 2 + modul.transform.position.x))
+            if (person.transform.position.x > (modul.transform.position.x - modul.GetComponent<SpriteRenderer>().bounds.size.x / 2))
+                if (person.transform.position.y < (modul.GetComponent<SpriteRenderer>().bounds.size.y / 2 + modul.transform.position.y))
+                    if (person.transform.position.y > (modul.transform.position.y - modul.GetComponent<SpriteRenderer>().bounds.size.y / 2))
                         return true;
         return false;
     }
