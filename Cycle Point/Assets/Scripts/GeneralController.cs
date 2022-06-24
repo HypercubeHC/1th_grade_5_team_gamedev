@@ -53,7 +53,7 @@ public class GeneralController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.X))
+        if(Input.GetKeyDown(KeyCode.X))
             SceneManager.LoadScene("Cutscene_deadly_gas");
 
         Paramaters();
@@ -103,9 +103,9 @@ public class GeneralController : MonoBehaviour
 
         for (int i = 0; i < electric.Length; i++)
         {
-            if (electric[i].activeSelf) ++electricCount;
-            if (fire[i].activeSelf) ++fireCount;
-            if (veryDangerous[i].activeSelf) ++dangerCount;
+            if (electric[i].activeSelf)  ++electricCount;
+            if (fire[i].activeSelf)  ++fireCount;
+            if (veryDangerous[i].activeSelf)  ++dangerCount;
         }
 
         if (healthbar.fillAmount <= 0)
@@ -113,14 +113,14 @@ public class GeneralController : MonoBehaviour
         else if (electricCount > 0)
             healthbar.fillAmount -= electricCount / 180f * Time.deltaTime;
         else
-            healthbar.fillAmount += 1 / 240f * Time.deltaTime;
+            healthbar.fillAmount += 1/ 240f * Time.deltaTime;
 
         if (oxygenbar.fillAmount <= 0 && dangerCount > 0)
             SceneManager.LoadScene("Cutscene_deadly_gas");
         else if (oxygenbar.fillAmount <= 0)
             SceneManager.LoadScene("Cutscene_non_working_station");
         else if (fireCount > 0 || dangerCount > 0)
-            oxygenbar.fillAmount -= (fireCount * 1.25f + dangerCount * 0.75f) / 200f * Time.deltaTime;
+            oxygenbar.fillAmount -= (fireCount*1.25f + dangerCount*0.75f) / 200f * Time.deltaTime;
         else
             oxygenbar.fillAmount += 1 / 240f * Time.deltaTime;
 
@@ -135,7 +135,7 @@ public class GeneralController : MonoBehaviour
             int start = Random.Range(0, 10);
             Debug.Log(timeToProblem);
             bool add = false;
-
+            
             for (int i = start + 1; i != start && !add; i++)
             {
                 if (i >= modules.Length)
@@ -172,28 +172,28 @@ public class GeneralController : MonoBehaviour
         }
     }
 
-    void solutionOfProblems()
+    void solutionOfProblems() 
     {
         int temp;
         foreach (var item in modules)
         {
             if (item.activeSelf && item.name != "Module M-01")
             {
-                if (item.transform.GetChild(2).gameObject.activeSelf)
+                if(item.transform.GetChild(2).gameObject.activeSelf)
                 {
                     for (int i = 0; i < people.Length; i++)
                     {
                         if (people[i].activeInHierarchy && people[i].GetComponent<SelectAndMove>().isChemist && !people[i].GetComponent<SelectAndMove>().move)
                         {
-                            if (inModule(item, people[i]) && !people[i].GetComponent<SelectAndMove>().broken)
+                            if (inModule(item,people[i]) && !people[i].GetComponent<SelectAndMove>().broken) 
                             {
                                 temp = Random.Range(0, 101);
                                 if (people[i].GetComponent<SelectAndMove>().chance >= temp)
                                     item.transform.GetChild(2).gameObject.SetActive(false);
-                                else
+                                else 
                                 {
                                     people[i].GetComponent<SpriteRenderer>().sprite = people[i].GetComponent<SelectAndMove>().red;
-                                    people[i].GetComponent<SelectAndMove>().broken = true;
+                                    people[i].GetComponent<SelectAndMove>().broken = true; 
                                 }
                             }
                         }

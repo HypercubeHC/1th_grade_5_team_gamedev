@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -45,13 +46,28 @@ public class Timer : MonoBehaviour
                         item.SetActive(true);
                         breakOverlap(item);
                         Pathfinding.AstarData.active.Scan();
+                        GameObject.Find("mapreference").GetComponent<MapObjects>().ArrayOfGameObjects[index].SetActive(false);
+                        List<GameObject> tmp1 = new List<GameObject>(GameObject.Find("mapreference").GetComponent<MapObjects>().ArrayOfGameObjects);
+                        tmp1.RemoveAt(index);
+                        GameObject.Find("mapreference").GetComponent<MapObjects>().ArrayOfGameObjects = tmp1.ToArray();
+                        List<double> tmp2 = new List<double>(GameObject.Find("mapreference").GetComponent<MapObjects>().destinations);
+                        tmp2.RemoveAt(index - 1);
+                        GameObject.Find("mapreference").GetComponent<MapObjects>().destinations = tmp2.ToArray();
+                        /*GameObject.Find("mapreference").GetComponent<MapObjects>().ArrayOfGameObjects.ToList().RemoveAt(index);
+                        GameObject.Find("mapreference").GetComponent<MapObjects>().destinations.ToList().RemoveAt(index - 1);
+                        GameObject.Find("mapreference").GetComponent<MapObjects>().ArrayOfGameObjects.ToArray();
+                        GameObject.Find("mapreference").GetComponent<MapObjects>().destinations.ToArray();*/
+                        break;
                     }
                 }
+
+                GameObject.Find("mapreference").GetComponent<MapObjects>().check = false;
                 SceneManager.UnloadSceneAsync ("MiniGame");
             }
             else
             {
                 Debug.Log("Failure");
+                GameObject.Find("mapreference").GetComponent<MapObjects>().check = false;
 				SceneManager.UnloadSceneAsync ("MiniGame");
             }
         }
