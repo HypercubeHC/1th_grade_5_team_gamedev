@@ -77,7 +77,7 @@ public class GeneralController : MonoBehaviour
         else
         {
             heightbar.fillAmount -= 1 / 240f * Time.deltaTime;
-            fuelbar.fillAmount += 1 / 120f * Time.deltaTime;
+            fuelbar.fillAmount += 1 / 70f * Time.deltaTime;
         }
 
         if (Input.GetKey(KeyCode.E))
