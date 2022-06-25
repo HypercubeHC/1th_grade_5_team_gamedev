@@ -146,7 +146,7 @@ public class GeneralController : MonoBehaviour
         else if (fireCount > 0 || dangerCount > 0)
             oxygenbar.fillAmount -= (fireCount + dangerCount*0.75f) / 150f * Time.deltaTime;
         else
-            oxygenbar.fillAmount += 1 / 180f * Time.deltaTime;
+            oxygenbar.fillAmount += 1 / 70f * Time.deltaTime;
 
         if (dangerCount > 0)
             fuelbar.fillAmount -= 1 / 240f * Time.deltaTime;
