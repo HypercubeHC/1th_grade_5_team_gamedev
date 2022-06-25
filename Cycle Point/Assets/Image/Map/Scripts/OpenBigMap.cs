@@ -9,23 +9,17 @@ public class OpenBigMap : MonoBehaviour
 	//GameObject map2;
 	public GameObject MainEnd;
 	public GameObject[] ArrayOfGameObjectsICareAbout;
-    // Start is called before the first frame update
 
-	/*private void Awake()
-	{
-		ArrayOfGameObjectsICareAbout = new GameObject[2];
-     	ArrayOfGameObjectsICareAbout[0] = GameObject.Find("Image");
-		ArrayOfGameObjectsICareAbout[1] = GameObject.Find("MapTexture");
-	}*/
-
-    void Start()
+	public bool enabled_map = false;
+	void Start()
     {
         //map = GameObject.Find("Image");
 		//map2 = GameObject.Find("MapTexture");
-		ArrayOfGameObjectsICareAbout = new GameObject[3];
+		ArrayOfGameObjectsICareAbout = new GameObject[4];
      	ArrayOfGameObjectsICareAbout[0] = GameObject.Find("Image");
 		ArrayOfGameObjectsICareAbout[1] = GameObject.Find("MapTexture");
 		ArrayOfGameObjectsICareAbout[2] = GameObject.Find("hot_keys_for_radar");
+		ArrayOfGameObjectsICareAbout[3] = GameObject.Find("Contur");
 		ArrayOfGameObjectsICareAbout[0].SetActive(false);
 		ArrayOfGameObjectsICareAbout[1].SetActive(false);
 		ArrayOfGameObjectsICareAbout[2].SetActive(false);
@@ -33,44 +27,31 @@ public class OpenBigMap : MonoBehaviour
 		MainEnd = GameObject.Find("Main End");
 		MainEnd.SetActive(false);
 	}
-
-    // Update is called once per frame
-	//UnityEngine.UI.MaskableGraphic map = GetComponent<UnityEngine.UI.Image>();
-	//[SerializeField]
-	//GameObject map = GameObject.Find("Image");
-	//GameObject map2 = GameObject.Find("MapTexture");
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.Space) && GameObject.Find("Controller").GetComponent<GeneralController>().is_Paused == false)
         {
 			Debug.Log("click");
 			Debug.Log(ArrayOfGameObjectsICareAbout.Length);
-			if(ArrayOfGameObjectsICareAbout[0].activeSelf == true) 
+			if(ArrayOfGameObjectsICareAbout[0].activeSelf == true)
 			{
+				enabled_map = false;
 				Debug.Log("true");
 				//map.enabled = false;
 				ArrayOfGameObjectsICareAbout[0].SetActive(false);
 				ArrayOfGameObjectsICareAbout[1].SetActive(false);
 				ArrayOfGameObjectsICareAbout[2].SetActive(false);
+				ArrayOfGameObjectsICareAbout[3].SetActive(false);
 			}
 			else
 			{
+				enabled_map = true;
 				Debug.Log("false");
 				ArrayOfGameObjectsICareAbout[0].SetActive(true);
-				//map.enabled = true;
 				ArrayOfGameObjectsICareAbout[1].SetActive(true);
 				ArrayOfGameObjectsICareAbout[2].SetActive(true);
 			}
 		}
-        /*if (Input.GetKeyDown(KeyCode.E))
-        {
-	        SceneManager.LoadScene("MiniGame", LoadSceneMode.Additive);
-        }
-
-        if (Input.GetKeyDown(KeyCode.V))
-        {
-	        SceneManager.UnloadSceneAsync ("MiniGame");
-        }*/
     }
 
 	public void mainEnd()

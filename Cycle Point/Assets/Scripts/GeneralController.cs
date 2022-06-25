@@ -16,7 +16,9 @@ public class GeneralController : MonoBehaviour
     Image coolbar;
     Image healthbar;
     Image oxygenbar;
+    private GameObject hints;
     public Image fuelbar;
+    public bool is_Paused = true;
 
     bool timeToProblem = false;
     float timer = 1;
@@ -49,11 +51,28 @@ public class GeneralController : MonoBehaviour
         healthbar = GameObject.Find("Healthbar").GetComponent<Image>();
         oxygenbar = GameObject.Find("Oxygenbar").GetComponent<Image>();
         fuelbar = GameObject.Find("Fuelbar").GetComponent<Image>();
+        hints = GameObject.Find("Hints");
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            if (hints.activeSelf == false)
+            {
+                is_Paused = true;
+                hints.SetActive(true);
+                Time.timeScale = 0;
+            }
+            else
+            {
+                is_Paused = false;
+                hints.SetActive(false);
+                Time.timeScale = 1;
+            }
+        }
+        
         if(Input.GetKeyDown(KeyCode.X))
             SceneManager.LoadScene("Cutscene_deadly_gas");
         if (Input.GetKeyDown(KeyCode.Z))

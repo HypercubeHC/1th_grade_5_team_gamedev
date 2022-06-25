@@ -37,16 +37,15 @@ public class CamControl : MonoBehaviour
 			cam.transform.position = cam.transform.position + new Vector3(dx, dy, 0);
 			station.transform.position = station.transform.position + new Vector3(dx, dy, 0);
 			contur.transform.position = contur.transform.position + new Vector3(dx, dy, 0);
-			if( Input.GetKeyDown( KeyCode.W ) )
+			if( Input.GetKeyDown( KeyCode.W ) && GameObject.Find("Controller").GetComponent<GeneralController>().is_Paused == false)
             {
 	            if(GameObject.Find("Controller").GetComponent<GeneralController>().fuelbar.fillAmount > 0.02 && speedy < 0.1f)
 	            {
 		            speedy += 0.01f;
-
 		            GameObject.Find("Controller").GetComponent<GeneralController>().fuelbar.fillAmount -= 1 / 50f;//если нет топлива, то не ускоряется
 	            }
             }
-			if (Input.GetKeyDown(KeyCode.S))
+			if (Input.GetKeyDown(KeyCode.S) && GameObject.Find("Controller").GetComponent<GeneralController>().is_Paused == false)
 			{
 				if(GameObject.Find("Controller").GetComponent<GeneralController>().fuelbar.fillAmount > 0.02 && speedy > -0.1f)
 				{
@@ -54,7 +53,7 @@ public class CamControl : MonoBehaviour
 					GameObject.Find("Controller").GetComponent<GeneralController>().fuelbar.fillAmount -= 1 / 50f;
 				}
 			}
-			if( Input.GetKeyDown( KeyCode.A ) )
+			if( Input.GetKeyDown( KeyCode.A ) && GameObject.Find("Controller").GetComponent<GeneralController>().is_Paused == false)
 			{
 				if(GameObject.Find("Controller").GetComponent<GeneralController>().fuelbar.fillAmount > 0.02 && speedx > -0.1f)
 				{
@@ -62,7 +61,7 @@ public class CamControl : MonoBehaviour
 					GameObject.Find("Controller").GetComponent<GeneralController>().fuelbar.fillAmount -= 1 / 50f;
 				}
 			}
-        	if( Input.GetKeyDown( KeyCode.D ) )
+        	if( Input.GetKeyDown( KeyCode.D ) && GameObject.Find("Controller").GetComponent<GeneralController>().is_Paused == false)
             {
 	            if(GameObject.Find("Controller").GetComponent<GeneralController>().fuelbar.fillAmount > 0.02 && speedx < 0.1f)
 	            {

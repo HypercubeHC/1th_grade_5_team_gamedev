@@ -5,18 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb893af7-c26b-431c-b925-8489b15f5f71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../../.idea/.idea.Cycle Point/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../.idea/.idea.Cycle Point/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../.idea/.idea.Cycle Point/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../.idea/.idea.Cycle Point/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hot_keys_for_radar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hot_keys_for_radar.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cycle_Point_Hints.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cycle_Point_Hints.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contur for radar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contur for radar.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hot_P.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hot_P.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CamControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CamControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Circleslot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Circleslot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DragDrop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DragDrop.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MapObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MapObjects.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenBigMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OpenBigMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Timer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Scripts/GeneralController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Scripts/GeneralController.cs" afterDir="false" />
     </list>
