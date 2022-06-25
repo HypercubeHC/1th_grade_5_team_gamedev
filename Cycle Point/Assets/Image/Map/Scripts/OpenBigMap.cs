@@ -7,6 +7,7 @@ public class OpenBigMap : MonoBehaviour
 	[SerializeField]
 	//GameObject map;
 	//GameObject map2;
+	public GameObject MainEnd;
 	public GameObject[] ArrayOfGameObjectsICareAbout;
     // Start is called before the first frame update
 
@@ -28,6 +29,9 @@ public class OpenBigMap : MonoBehaviour
 		ArrayOfGameObjectsICareAbout[0].SetActive(false);
 		ArrayOfGameObjectsICareAbout[1].SetActive(false);
 		ArrayOfGameObjectsICareAbout[2].SetActive(false);
+		
+		MainEnd = GameObject.Find("Main End");
+		MainEnd.SetActive(false);
 	}
 
     // Update is called once per frame
@@ -67,5 +71,10 @@ public class OpenBigMap : MonoBehaviour
         {
 	        SceneManager.UnloadSceneAsync ("MiniGame");
         }*/
+    }
+
+	public void mainEnd()
+    {
+		SceneManager.LoadScene("Cutscene_main_ending");
     }
 }

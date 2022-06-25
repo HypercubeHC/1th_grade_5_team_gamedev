@@ -21,6 +21,7 @@ public class GeneralController : MonoBehaviour
     bool timeToProblem = false;
     float timer = 1;
     float timeProblem = 30f;
+    public bool gasProb = false;
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +56,10 @@ public class GeneralController : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.X))
             SceneManager.LoadScene("Cutscene_deadly_gas");
+        if (Input.GetKeyDown(KeyCode.Z))
+            SceneManager.LoadScene("Cutscene_Open doors");
+        if (Input.GetKeyDown(KeyCode.C))
+            GameObject.Find("SoundBeep").GetComponent<AudioSource>().Play();
 
         Paramaters();
 
@@ -120,9 +125,9 @@ public class GeneralController : MonoBehaviour
         else if (oxygenbar.fillAmount <= 0)
             SceneManager.LoadScene("Cutscene_non_working_station");
         else if (fireCount > 0 || dangerCount > 0)
-            oxygenbar.fillAmount -= (fireCount*1.25f + dangerCount*0.75f) / 200f * Time.deltaTime;
+            oxygenbar.fillAmount -= (fireCount + dangerCount*0.75f) / 150f * Time.deltaTime;
         else
-            oxygenbar.fillAmount += 1 / 240f * Time.deltaTime;
+            oxygenbar.fillAmount += 1 / 180f * Time.deltaTime;
 
         if (dangerCount > 0)
             fuelbar.fillAmount -= 1 / 240f * Time.deltaTime;
@@ -149,6 +154,8 @@ public class GeneralController : MonoBehaviour
                     {
                         if (j >= 3)
                             j = -1;
+                        else if (j == 2 && !gasProb)
+                            continue;
                         else if (!modules[i].transform.GetChild(j).gameObject.activeSelf)
                         {
                             add = true;
@@ -158,7 +165,7 @@ public class GeneralController : MonoBehaviour
                 }
             }
 
-            timeProblem = Random.Range(10, 25);
+            timeProblem = Random.Range(15, 25);
             timeToProblem = false;
         }
         else
@@ -203,7 +210,7 @@ public class GeneralController : MonoBehaviour
                 {
                     for (int i = 0; i < people.Length; i++)
                     {
-                        if (people[i].activeInHierarchy && !people[i].GetComponent<SelectAndMove>().move)
+                        if (people[i].activeInHierarchy && !people[i].GetComponent<SelectAndMove>().move && !people[i].GetComponent<SelectAndMove>().isMedic)
                         {
                             if (inModule(item, people[i]) && !people[i].GetComponent<SelectAndMove>().broken)
                             {
@@ -223,7 +230,7 @@ public class GeneralController : MonoBehaviour
                 {
                     for (int i = 0; i < people.Length; i++)
                     {
-                        if (people[i].activeInHierarchy && !people[i].GetComponent<SelectAndMove>().move)
+                        if (people[i].activeInHierarchy && !people[i].GetComponent<SelectAndMove>().move && !people[i].GetComponent<SelectAndMove>().isMedic)
                         {
                             if (inModule(item, people[i]) && !people[i].GetComponent<SelectAndMove>().broken)
                             {

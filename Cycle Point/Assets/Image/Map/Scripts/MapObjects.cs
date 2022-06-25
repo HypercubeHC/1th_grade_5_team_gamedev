@@ -33,6 +33,7 @@ public class MapObjects : MonoBehaviour
     void Update()
     {
         //float destination;
+
 		for (int i = 1; i <= ArrayOfGameObjects.Length - 1; i++)//удаляем модули for (int i = 1; i <= 9; i++)
 		{
     		destinations[i - 1] = Mathf.Sqrt(Mathf.Pow((ArrayOfGameObjects[i].transform.position.x - ArrayOfGameObjects[0].transform.position.x), 2) +
