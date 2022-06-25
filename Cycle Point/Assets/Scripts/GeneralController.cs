@@ -52,6 +52,7 @@ public class GeneralController : MonoBehaviour
         oxygenbar = GameObject.Find("Oxygenbar").GetComponent<Image>();
         fuelbar = GameObject.Find("Fuelbar").GetComponent<Image>();
         hints = GameObject.Find("Hints");
+        Time.timeScale = 0;
     }
 
     // Update is called once per frame
@@ -185,7 +186,7 @@ public class GeneralController : MonoBehaviour
                 }
             }
 
-            timeProblem = Random.Range(15, 25);
+            timeProblem = Random.Range(15, 90);
             timeToProblem = false;
         }
         else
