@@ -4,15 +4,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+
 public class TicTacToeController : MonoBehaviour {
 
     [Tooltip("Player 1 is played by the AI")]
     [HideInInspector]
-    public bool p1Ai = false;
+    public bool p1Ai = true;
 
     [Tooltip("Player 2 is played by the AI")]
     [HideInInspector]
-    public bool p2Ai = true;
+    public bool p2Ai = false;
 
     [Tooltip("Using hard coded instructions for the first two moves to improve the speed")]
     [HideInInspector]
@@ -32,13 +34,20 @@ public class TicTacToeController : MonoBehaviour {
     public delegate void OnGameOverDelegate(int win);
     public OnGameOverDelegate onGameOverDelegate;
 
-    private bool turn; // true: Player, false: AI
+    private bool turn = true; // true: Player, false: AI
     private int fieldsLeft;
     private bool isGameOver = true;
 
     // Will hold the current values of the MinMax algorithm
     private int recursionScore;
     private int optimalScoreButtonIndex = -1;
+
+    private string ui_background = "#103845FF";
+    private string ui_background2 = "#276573";
+    private string ui_text = "#4dffffff";
+    private string ui_text2 = "#408c8cff";
+    private string ui_dbtext = "#36d88eff";
+    private string ui_dbred = "#cf4449ff";
 
     public void StartGame() {
         turn = Mathf.Round(UnityEngine.Random.Range(0, 1)) == 1;
@@ -67,7 +76,7 @@ public class TicTacToeController : MonoBehaviour {
         if (text.text != "") {
             return false;
         }
-        text.text = turn ? "X" : "O";
+        text.text = turn ? "O" : "X";
         fieldsLeft--;
 
         return CheckForWin(text.text, colorate);
@@ -225,13 +234,13 @@ public class TicTacToeController : MonoBehaviour {
         depthText.gameObject.SetActive(true);
         depthText.text = "Depth: " + depth;
 
-        GetText(button).color = Color.gray;
+        //GetText(button).color = Color.gray;
     }
 
     private void HideDepthAndScore(Button button) {
         button.transform.GetChild(1).gameObject.SetActive(false);
         button.transform.GetChild(2).gameObject.SetActive(false);
-        GetText(button).color = Color.white;
+        //GetText(button).color = Color.white;
     }
 
     private void HideDepthAndScoreForAllButtons() {
@@ -299,7 +308,8 @@ public class TicTacToeController : MonoBehaviour {
                   && text2.text == mark
                   && text3.text == mark;
         if (colorate && equal) {
-            Color color = turn ? Color.green : Color.red;
+            Color color;
+            ColorUtility.TryParseHtmlString(turn ? ui_dbred : ui_dbtext, out color);
             text1.color = color;
             text2.color = color;
             text3.color = color;
@@ -340,9 +350,11 @@ public class TicTacToeController : MonoBehaviour {
 
     [ContextMenu("Reset")]
     private void Reset() {
+        Color color;
+        ColorUtility.TryParseHtmlString(ui_text, out color);
         foreach (Button button in buttons) {
             Text text = GetText(button);
-            text.color = Color.white;
+            text.color = color;
             text.text = "";
             button.interactable = true;
         }
