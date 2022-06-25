@@ -179,6 +179,7 @@ public class GeneralController : MonoBehaviour
                         {
                             add = true;
                             modules[i].transform.GetChild(j).gameObject.SetActive(true);
+                            GameObject.Find("SoundProb").GetComponent<AudioSource>().Play();
                         }
                     }
                 }
